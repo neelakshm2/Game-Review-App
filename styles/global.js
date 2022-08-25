@@ -15,3 +15,18 @@ export const globalStyles = StyleSheet.create({
     lineHeight: 20,
   },
 });
+
+export const ratingImage = (rating) => {
+  switch (rating) {
+    case 1:
+      return require("../assets/rating-1.png");
+    case 2:
+      return require("../assets/rating-2.png");
+    case 3:
+      return require("../assets/rating-3.png");
+    case 4:
+      return require("../assets/rating-4.png");
+    case 5:
+      return require("../assets/rating-5.png");
+  }
+};
