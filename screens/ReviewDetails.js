@@ -10,6 +10,7 @@ export default function ReviewDetails({ route }) {
 
   // const { item } = route?.params || {};
   const { title, body, rating } = route.params;
+  const ratingInt = parseInt(rating);
 
   return (
     <View style={globalStyles.container}>
@@ -18,7 +19,7 @@ export default function ReviewDetails({ route }) {
         <Text>{body}</Text>
         <View style={styles.rating}>
           <Text>GameZone Rating: </Text>
-          <Image source={ratingImage(rating)} />
+          <Image source={ratingImage(ratingInt)} />
         </View>
       </Card>
     </View>
