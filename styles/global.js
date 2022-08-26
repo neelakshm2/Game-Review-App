@@ -21,6 +21,13 @@ export const globalStyles = StyleSheet.create({
     fontSize: 18,
     borderRadius: 6,
   },
+  errorText: {
+    color: "crimson",
+    marginBottom: 10,
+    fontWeight: "bold",
+    marginTop: 6,
+    textAlign: "center",
+  },
 });
 
 export const ratingImage = (rating) => {
